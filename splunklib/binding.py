@@ -482,7 +482,7 @@ class Context(object):
         self.namespace = namespace(**kwargs)
         self.username = kwargs.get("username", "")
         self.password = kwargs.get("password", "")
-        self.basic = kwargs.get("basic", False)
+        self.basic = kwargs.get("basic", True)
         self.bearerToken = kwargs.get("splunkToken", "")
         self.autologin = kwargs.get("autologin", False)
         self.additional_headers = kwargs.get("headers", [])
